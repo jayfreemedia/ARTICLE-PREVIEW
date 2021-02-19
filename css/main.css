@@ -1,0 +1,293 @@
+*{box-sizing: border-box;
+  margin:  0;
+  padding: 0; 
+  text-decoration: none;              
+}
+
+:root{font-family: "Manrope";
+      --grayishblue : hsl(217, 19%, 35%);
+}
+.gridcontainer{
+    position:absolute;
+    display: grid;
+    margin: 15% auto auto 23%; 
+    width:  780px;
+    height: 280px;
+    grid-template-columns: 1.3fr 2fr;  
+    box-sizing: border-box;
+    border-radius: 2%;
+    max-width: 100%; 
+    max-height: 100%;
+}
+.gridimage{
+    max-width:  100%;
+    height:     100%; 
+    object-fit: cover;
+    object-position: left;
+    border-radius: 5% 0% 0% 5%;
+    max-width: 100%; 
+    max-height: 280px;
+}
+.gridbody{
+    background-color: white;
+    border-radius: 0% 2.5% 2.5% 0%;
+    text-align: left;
+    word-spacing: .1em;
+    max-width: 100%; 
+    max-height: 280px;
+}
+.gridparagraph{
+    padding: 0% 10% 0% 10%; 
+}
+h1{
+    color: var(--grayishblue);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5% 10% 5% 10%;    
+}
+h2{ 
+    display: inline-block;
+    color: var(--grayishblue);
+    font-size: 13px; 
+    padding: 7% 0% 3% 0%;
+}
+.profilepic{
+    border-radius: 50%;
+    width: 15%;
+    
+}
+time{
+    color:hsl(212, 23%, 69%);
+    font-size: 13px;
+}
+p{
+    color: var(--grayishblue);
+    font-size: 13px;
+    font-weight: 500;
+    word-spacing: .1em;
+    line-height: 1.6em;
+}
+.gridavatar{
+    display: inline-block;
+    vertical-align: top;
+    padding: 4% 0% 0% 9%;
+}
+.namedate{
+    display: inline-block;
+    padding-left: 3%;
+    vertical-align: top;
+    width: 35%;
+    font-size: 13px;
+    word-spacing: .1em;   
+}
+.sharecircle{
+    display: inline-grid;
+    position: relative;
+    transform: translate(-84%, 45%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+    z-index: 4;
+}
+.sharearrow{
+    display:inline-block;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    fill:hsl(217, 19%, 35%);
+}
+
+.smediabubble{
+    display: none;
+    position: relative;
+    transform: translate(113%, -232%);
+    width:   250px;
+    height:  60px;
+    background:hsl(217, 19%, 35%);
+    border-radius: .5em;
+    line-height: 4em;
+    overflow: hidden;
+    transition:all 0.2s ease;
+}
+.smicon{
+    width: 10%;
+    margin-bottom: 4%;
+}
+.bubblearrow{
+    display: none;
+    transform:translate(380px, -145px);
+    width:  0;
+    height: 0;
+    border-left:  20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top:   20px solid var(--grayishblue);
+}
+.sharetext{
+    color:hsl(212, 23%, 69%);
+    font-size: 1em;
+    letter-spacing: .1em;
+    font-weight: 300;
+    font-family: "Manrope";
+    padding-left: 14%;
+    vertical-align: 24%;
+}
+.sharefacebook::before{
+    width: 5%;
+    content:" "; 
+    display:inline-block; 
+}
+.sharetwitter::before{
+    width: 5%;
+    content:" "; 
+    display:inline-block; 
+}
+.sharepinterest::before{
+    width: 5%;
+    content:" "; 
+    display:inline-block; 
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+}
+/* This is where the clicking animation begins */
+
+/* .sharecircle:hover {
+    background-color: hsl(217, 19%, 35%);
+
+} */
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../fonts/Manrope-VariableFont_wght.ttf");
+}
+@media all and (max-width : 800px){
+    .gridcontainer{
+        position:absolute;
+        display: grid;
+        margin: 15% auto auto 25%; 
+        width:  330px;
+        height: auto;
+        grid-template-columns: 1.3fr;  
+        border-radius: 2%;
+        max-width: 100%; 
+    }
+    .gridimage{
+        max-width:  100%;
+        height:     100%; 
+        object-fit: cover;
+        object-position: top;
+        border-radius: 5% 5% 0% 0%;
+    }
+    .gridbody{
+        background-color: white;
+        border-radius: 0% 0% 2.5% 2.5%;
+        text-align: left;
+        word-spacing: .1em;
+        max-width: 100%; 
+        max-height: 320px;
+    }
+    .gridparagraph{
+        padding: 0% 10% 0% 9%; 
+    }
+    h1{
+        color: var(--grayishblue);
+        font-size: 1em;
+        font-weight: 700; 
+        padding: 8% 10% 5% 10%;    
+    }
+    h2{ 
+        display: inline-block;
+        color: var(--grayishblue);
+        font-size: 13px; 
+        padding: 7% 0% 3% 0%;
+        width: 117px;
+    }
+    .profilepic{
+        border-radius: 50%;
+        width: 20%;
+        padding-top: 4%;
+    }
+    time{
+        color:hsl(212, 23%, 69%);
+        font-size: 13px;
+    }
+    p{
+        color: var(--grayishblue);
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.6em;
+    }
+    .gridavatar{
+        display: inline-block;
+        vertical-align: top;
+        padding: 4% 0% 0% 9%;
+        transform: translate(0px, 10px);
+    }
+    .namedate{
+        display: inline-block;
+        padding: 6% 0% 0% 3%;
+        vertical-align: top;
+        width: 35%;
+        font-size: 13px;
+        word-spacing: .1em;   
+    }
+    .smediabubble{
+        display: none;
+        width:   330px;
+        height:  80px;
+        transform: translate(0px, -117px);
+        background:hsl(217, 19%, 35%);
+        border-radius: 0em 0em .5em .5em;
+        line-height: 5em;
+        overflow: hidden;
+        transition:all 0.2s ease;
+    }
+    .bubblearrow{
+        display: none;
+        width:  0;
+        height: 0;
+        border-left:  0px solid transparent;
+        border-right: 0px solid transparent;
+        border-top:   0px solid var(--grayishblue);
+    }
+    .smicon{
+        width: 8%;
+        height: auto;
+    }
+    .sharetext{
+        color:hsl(212, 23%, 69%);
+        font-size: 1em;
+        letter-spacing: .1em;
+        font-weight: 300;
+        font-family: "Manrope";
+        padding-left: 10%;
+        padding-right: 5%;
+        vertical-align: 24%;
+    }
+
+    .sharecircle{
+        display: inline-grid;
+        transform: translate(507%, -95%);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: hsl(210, 46%, 95%);
+        z-index: 4;
+    }
+    .sharefacebook::before{
+        width: 2%;
+        content:" "; 
+        display:inline-block; 
+    }
+    .sharetwitter::before{
+        width: 2%;
+        content:" "; 
+        display:inline-block; 
+    }
+    .sharepinterest::before{
+        width: 2%;
+        content:" "; 
+        display:inline-block; 
+    }
+}
