@@ -89,6 +89,7 @@ p{
     border-radius: 50%;
     background-color: hsl(210, 46%, 95%);
     z-index: 4;
+    cursor: pointer;
 }
 .sharearrow{
     display:inline-block;
